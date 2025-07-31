@@ -1,6 +1,6 @@
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Environment, PerspectiveCamera } from '@react-three/drei';
-import { FloatingCube } from './FloatingCube';
+import { FloatingOrbs } from './FloatingOrbs';
 
 export function Scene3D() {
   return (
@@ -11,7 +11,7 @@ export function Scene3D() {
         <pointLight position={[10, 10, 10]} intensity={1} color="#FF6B00" />
         <pointLight position={[-10, -10, -10]} intensity={0.5} color="#4F46E5" />
         
-        <FloatingCube />
+        <FloatingOrbs />
         
         <Environment preset="night" />
         <OrbitControls 

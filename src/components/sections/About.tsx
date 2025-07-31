@@ -146,7 +146,7 @@ export function About() {
         >
           <h3 className="text-3xl font-bold mb-6">Join Our Team</h3>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Whether you're a developer, designer, project manager, or just passionate about 
+            Whether you're a developer, designer, or just passionate about 
             innovation, there's a place for you in CIDC. Together, we're building the future 
             of our campus.
           </p>
@@ -162,12 +162,6 @@ export function About() {
               className="px-4 py-2 bg-primary/10 border border-primary/20 rounded-lg"
             >
               <span className="text-primary font-medium">UI/UX Designers</span>
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="px-4 py-2 bg-primary/10 border border-primary/20 rounded-lg"
-            >
-              <span className="text-primary font-medium">Project Managers</span>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.05 }}

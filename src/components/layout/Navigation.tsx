@@ -7,6 +7,7 @@ const navItems = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
   { name: 'Projects', href: '#projects' },
+  { name: 'Members', href: '#members' },
   { name: 'Events', href: '#events' },
   { name: 'Contact', href: '#contact' },
 ];
@@ -36,9 +37,9 @@ export function Navigation() {
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="flex items-center"
+            className="flex items-center z-10"
           >
-            <span className="text-2xl font-bold gradient-text">CIDC</span>
+            <span className="text-2xl font-bold gradient-text whitespace-nowrap">CIDC</span>
           </motion.div>
 
           {/* Desktop Navigation */}
