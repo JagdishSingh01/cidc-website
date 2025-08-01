@@ -8,21 +8,21 @@ const leadership = [
     name: 'Dr. Faculty Incharge',
     role: 'Faculty In-charge',
     department: 'Computer Science',
-    icon: GraduationCap,
+    image: '/Secretary/Ebha_mollick.jpg',
     type: 'faculty'
   },
   {
-    name: 'Secretary 1',
+    name: 'Jagdish Singh',
     role: 'Secretary',
-    year: 'Final Year',
-    icon: UserCheck,
+    year: 'Third Year',
+    image: '/Secretary/jagdish_photo.jpg',
     type: 'secretary'
   },
   {
-    name: 'Secretary 2', 
+    name: 'Ebha Mollick',
     role: 'Secretary',
-    year: 'Final Year',
-    icon: UserCheck,
+    year: 'Third Year',
+    image: '/Secretary/Ebha_mollick.jpg',
     type: 'secretary'
   }
 ];
@@ -61,7 +61,7 @@ export function Members() {
             Our <span className="gradient-text">Team</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Meet the passionate individuals driving innovation at CIDC, from leadership 
+            Meet the passionate individuals driving innovation at CIDC, from leadership
             to active members and our accomplished alumni.
           </p>
         </motion.div>
@@ -85,9 +85,23 @@ export function Members() {
               >
                 <Card className="glass hover:border-primary/50 transition-all duration-300 text-center group">
                   <CardContent className="pt-6">
+                    {/* Updated to use image or icon */}
                     <div className="flex justify-center mb-4">
-                      <div className="p-4 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                        <leader.icon className="h-8 w-8 text-primary" />
+                      <div className="p-4 bg-primary/10 group-hover:bg-primary/20 transition-colors rounded-[5%]">
+                        {leader.image ? (
+                          <img
+                            src={leader.image}
+                            alt={leader.name}
+                            className="h-auto w-40 object-cover border-primary"
+                            style={{ borderRadius: '5%' }}
+                          />
+                        ) : (
+                          <img
+                            src="/default-profile.png" // Place a default-profile.png in your public folder
+                            alt="Default Profile"
+                            className="h-32 w-32 object-cover rounded-full border-4 border-primary mx-auto"
+                          />
+                        )}
                       </div>
                     </div>
                     <h4 className="font-bold text-lg mb-2 group-hover:text-primary transition-colors">
@@ -213,7 +227,7 @@ export function Members() {
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold mb-4">Want to Join Our Team?</h3>
               <p className="text-muted-foreground mb-6">
-                We're always looking for passionate students who want to make a difference 
+                We're always looking for passionate students who want to make a difference
                 through technology and innovation.
               </p>
               <motion.button

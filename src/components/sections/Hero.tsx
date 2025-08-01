@@ -28,8 +28,9 @@ export function Hero() {
               transition={{ delay: 0.2 }}
               className="flex items-center gap-2 mb-6"
             >
-              <Sparkles className="h-5 w-5 text-primary" />
-              <span className="text-primary font-semibold">College Innovation Hub</span>
+              {/* <Sparkles className="h-5 w-5 text-primary" /> */}
+              {/* <span className="text-primary font-semibold">College Innovation Hub</span> */}
+              <div className='m-5'></div>
             </motion.div>
 
             <motion.h1
